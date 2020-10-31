@@ -1,0 +1,290 @@
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+* {
+  color: whitesmoke;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#row1 .container {
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: -30%;
+}
+#row1 .container > * {
+  text-align: center;
+  color: #ffffff;
+}
+#row1 .container h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+  display: inline-block;
+}
+#row1 .container .lead {
+  font-size: 28px;
+}
+#row1 .scroll-down {
+  height: 60px;
+  width: 60px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  opacity: 80;
+  text-align: center;
+  z-index: 6;
+  animation: blinker 1.0s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  #blink{
+    animation: blinker-one 1s linear infinite;
+  }
+#row2 {
+  position: relative;
+  margin-top: 650px;
+  margin-left: 0;
+  background-color: transparent;
+}
+ #row2 h1 {
+  text-align: center;
+  position: absolute;
+  margin-left: 45%;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding-top: 30px;
+  height: 650px;
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding-top: 30px;
+  height: 650px;
+  margin-left: 10px;
+}
+.about{
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 70px;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.profile-img {
+  padding-left: 150px;
+  padding-top: 50px;
+}
+#profile {
+  border-radius: 50%;
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+#row3{
+    height: 500px;
+}
+#row3 h1 {
+    text-align: center;
+    position: absolute;
+    margin-left: 45%;
+    margin-top:-40px;
+   
+  }
+  
+.content {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 8em;
+    padding: 30px 0 30px;
+
+}
+
+#skill {
+    list-style: none;
+    padding-top: 30px;
+}
+
+#skill li {
+    margin-bottom: 70px;
+    background:white;
+    height: 4px;
+    border-radius: 25px;
+    border-left: 1px solid #111;
+    border-top: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+#skill li em {
+    position: relative;
+    top: -30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.expand {
+    height: 3px;
+    margin: 1px 0;
+    background: red;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
+}
+
+.html {
+    width: 80%;
+    -moz-animation: html 2s ease-out;
+    -webkit-animation: html 2s ease-out;
+}
+
+.css {
+    width: 70%;
+    -moz-animation: css 2s ease-out;
+    -webkit-animation: css 2s ease-out;
+}
+
+.javascript {
+    width: 60%;
+    -moz-animation: javascript 2s ease-out;
+    -webkit-animation: javascript 2s ease-out;
+}
+
+.java {
+    width: 75%;
+    -moz-animation: java 2s ease-out;
+    -webkit-animation: java 2s ease-out;
+}
+
+.sql {
+    width: 80%;
+    -moz-animation: sql 2s ease-out;
+    -webkit-animation: sql 2s ease-out;
+}
+
+@-moz-keyframes html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-moz-keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-moz-keyframes javascript {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
+@-moz-keyframes java {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 75%;
+    };
+}
+
+@-moz-keyframes sql {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-webkit-keyframes javascript {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
+@-webkit-keyframes java {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 75%;
+    };
+}
+
+@-webkit-keyframes sql {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+#row4{
+    height:200px;
+    margin-left: 0;
+    background-color: lightgrey;
+}
